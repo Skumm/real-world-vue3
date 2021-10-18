@@ -13,4 +13,7 @@ export default {
   getEvents() {
     return apiClient.get("/db");
   },
+  getEvent(id) {
+    return apiClient.get("/events/" + id);
+  },
 };
